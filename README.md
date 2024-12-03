@@ -1,4 +1,3 @@
-```markdown
 # Microservices Study - Comments Service
 
 ## Overview
@@ -21,11 +20,13 @@ Currently, comments are stored in an **in-memory object** (`commentsByPostId`), 
 
 ## Example Usage
 - To **create a comment** for a post, send a **POST** request to `/posts/:id/comments` with JSON data in the following format:
+
   ```json
   {
     "content": "This is a comment"
   }
   ```
+
 - To **retrieve comments** for a specific post, send a **GET** request to `/posts/:id/comments`.
 
 ## Notes
@@ -36,5 +37,3 @@ Currently, comments are stored in an **in-memory object** (`commentsByPostId`), 
 - Implement persistent storage using a database (e.g., MongoDB or PostgreSQL).
 - Add more advanced error handling and validation for incoming data.
 - Expand to handle additional features, such as editing or deleting comments.
-```
-
